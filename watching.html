@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>紙相撲 N☆G | 観戦する</title>
+
+        <script src="https://chirimen.org/remote-connection/js/RelayServer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@chirimen/microbit"></script>
+        <script src="watching.js"></script>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+    <body>
+        <h1 align="center" style="border-bottom: solid 3px rgb(36, 0, 243); font-size: 80px; font-family: HGP行書体;">紙相撲 NEXT☆GENERATION <br><strong>観戦</strong></h1>
+
+        <table align="center" id="tab_mainTable" border="0">
+            <tr>
+                <td align="center">
+                  <input class="join_text" id="channelCode" type="text" placeholder="チャンネルコード...">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                  <div id="GoButton" onclick="connect()"">Start!!</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="introduction">
+                    <table  align="center" border="0">
+                        <tr>
+                            <th class="playerData">Name</th>
+                            <th class="playerData">Player1</th>
+                            <th class="playerData">Player2</th>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">UserName</td>
+                            <td id="player1_name" class="playerData">-</td>
+                            <td id="player2_name" class="playerData">-</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">temperature</td>
+                            <td id="player1_temperature" class="playerData">-</td>
+                            <td id="player2_temperature" class="playerData">-</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">brightness</td>
+                            <td id="player1_brightness" class="playerData">-</td>
+                            <td id="player2_brightness" class="playerData">-</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">button</td>
+                            <td id="player1_button" class="playerData">-</td>
+                            <td id="player2_button" class="playerData">-</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">acceleration</td>
+                            <td id="player1_accel" class="playerData">-</td>
+                            <td id="player2_accel" class="playerData">-</td>
+                        </tr>
+            
+                        <tr>
+                            <td class="playerData">time</td>
+                            <td id="player1_time" class="playerData">-</td>
+                            <td id="player2_time" class="playerData">-</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
